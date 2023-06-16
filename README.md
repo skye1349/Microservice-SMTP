@@ -1,6 +1,6 @@
 # Microservice-SMTP
 
-![alt text](image/a1.jpg)
+![alt text](image/a1.png)
 
 ## Deploy Microservice manifests
 
