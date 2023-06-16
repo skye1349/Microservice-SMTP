@@ -5,4 +5,4 @@
 ## Deploy Microservice manifests
 
 ```bash
-kubectl apply -f V1-Microservices/
+kubectl apply -f kube-manifests/
