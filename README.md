@@ -22,10 +22,14 @@ kubectl get secret argocd-initial-admin-secret -n argocd -o yaml
 echo <your-password> | base64 --decode
 ```
 2. Configure ArgoCD with "Application" CRD
+write the application.yaml of ArgoCD
 
-
-
-
+3. Apply the Argo CD application,yaml in the cluster
+```bash
+kubectl apply -f application.yaml
+```
+4. Test our setup by updating Deployment.yaml
+Your can edit image version in deployment.yaml to check the sync status in ArgoCD UI, but if we do the munal change in K8s cluster, it will be overwritten.
 
 ## Manually deploy Microservice manifests
 ```bash
